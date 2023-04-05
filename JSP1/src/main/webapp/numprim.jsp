@@ -1,0 +1,14 @@
+<%-- numprim.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<form method="get" action="resultprim.jsp">
+Esta aplicacion sirve para generar 100 numeros aleatorios:
+<input type="submit" value="Generar">
+</form>
+</body>
+</html>

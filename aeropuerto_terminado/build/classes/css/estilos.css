@@ -1,0 +1,55 @@
+
+.button {
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.guardar {
+    -fx-background-color: #009e2e;
+}
+
+.guardar:hover {
+    -fx-background-color: #00d02b;
+}
+
+.cancelar {
+    -fx-background-color: #ff0021;
+}
+
+.cancelar:hover {
+    -fx-background-color: #ff4b29;
+}
+
+.textfield {
+    -fx-background-color: #F2F2F2;
+}
+
+.textfield:focused {
+    -fx-background-color: #FFF;
+}
+
+#AnchorPane {
+    -fx-background-image: url('/img/fondo.jpg')
+}
+
+.combo .list-cell {
+    -fx-text-fill: grey;
+}
+
+.combo .list-cell:hover {
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+
+.table .table-row-cell:odd {
+    -fx-background-color: #e7e7e7;
+}
+
+.table .table-row-cell:selected {
+    -fx-background-color: steelblue;
+}
+
+.table .table-row-cell:selected .text{
+    -fx-fill: black;
+}
+

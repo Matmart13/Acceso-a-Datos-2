@@ -1,0 +1,15 @@
+<%-- resultEj5.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<%
+int ultimo = Integer.parseInteger(request.getParameter("numero1"));
+
+%>
+</body>
+</html>

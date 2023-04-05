@@ -1,0 +1,16 @@
+<%-- menu.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+De que quieres sacar el area:
+<input type="text" name="tipo">
+<form method="get" action="resultcir.jsp">
+<input type="submit" value="OK">
+Circulo, cuadrado, triangulo
+</form>
+</body>
+</html>

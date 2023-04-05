@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="282.0" prefWidth="321.0" stylesheets="@../css/estilos.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AniadirAvionController">
+   <children>
+      <Label layoutX="47.0" layoutY="42.0" text="Modelo" />
+      <TextField fx:id="txtModelo" layoutX="103.0" layoutY="38.0" prefHeight="25.0" prefWidth="162.0" styleClass="textfield" />
+      <TextField fx:id="txtAsientos" layoutX="103.0" layoutY="77.0" prefHeight="25.0" prefWidth="162.0" styleClass="textfield" />
+      <Label layoutX="45.0" layoutY="81.0" text="Asientos" />
+      <TextField fx:id="txtVelMax" layoutX="103.0" layoutY="111.0" prefHeight="25.0" prefWidth="162.0" styleClass="textfield" />
+      <Label layoutX="43.0" layoutY="115.0" text="Vel. Max." />
+      <RadioButton fx:id="rdbActivado" layoutX="103.0" layoutY="154.0" mnemonicParsing="false" selected="true" text="Activado" />
+      <RadioButton fx:id="rdbDesactivado" layoutX="174.0" layoutY="154.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="Desactivado" />
+      <ComboBox fx:id="cmbAeropuerto" layoutX="103.0" layoutY="196.0" prefHeight="25.0" prefWidth="162.0" styleClass="combo" />
+      <Label layoutX="28.0" layoutY="200.0" text="Aeropuerto" />
+      <Button fx:id="btnGuardar" layoutX="103.0" layoutY="237.0" mnemonicParsing="false" onAction="#guardar" prefHeight="25.0" prefWidth="81.0" text="Guardar">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="guardar" />
+         </styleClass></Button>
+      <Button fx:id="btnCancelar" layoutX="190.0" layoutY="237.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="74.0" text="Cancelar">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="cancelar" />
+         </styleClass></Button>
+   </children>
+</AnchorPane>

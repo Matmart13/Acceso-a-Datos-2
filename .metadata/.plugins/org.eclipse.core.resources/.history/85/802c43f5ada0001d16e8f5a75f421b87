@@ -1,0 +1,20 @@
+<%-- Ejercicio 5.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<p>Cuestionario</p>
+<form method="get" action="resultadoEj5.jsp">
+Cual es la capital de España
+<input type="text" name="ultimo">
+Cual es la capital de Italia
+<input type="text" name="ultimo">
+Cual es la capital de Francia
+<input type="text" name="ultimo">
+<input type="submit" value="OK">
+</form>
+</body>
+</html>

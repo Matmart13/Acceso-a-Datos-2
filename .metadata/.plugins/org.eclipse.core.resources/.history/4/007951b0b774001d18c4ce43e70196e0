@@ -1,0 +1,62 @@
+package Game;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class Funciones {
+	public static final String ANSI_BLACK = "\u001B[30m";
+	public static final String ANSI_RED = "\u001B[31m";
+	public static final String ANSI_GREEN = "\u001B[32m";
+	public static final String ANSI_YELLOW = "\u001B[33m";
+	public static final String ANSI_BLUE = "\u001B[34m";
+	public static final String ANSI_PURPLE = "\u001B[35m";
+	public static final String ANSI_CYAN = "\u001B[36m";
+	public static final String ANSI_WHITE = "\u001B[37m";
+	public static final String ANSI_RESET = "\u001B[0m";
+	public Double precio(HashMap<String,Double> hm, String obj) {
+		return hm.get(obj);
+	}
+	
+	public int cantidad(HashMap<String,Double> hm, String obj) {
+		int cantidad = 0;
+		for (int i = 0; i < hm.size(); i++) {
+			if(hm.containsKey(obj) == true) {
+				cantidad++;
+				i++;
+			}else {
+				return 0;
+			}
+		}
+		return cantidad;
+	}
+	public void imprimirlista(HashMap<String,Double> hm) {
+		String clave;
+		 Iterator<String> productos = hm.keySet().iterator();
+		 while(productos.hasNext()){
+	            clave = productos.next();
+	            System.out.println(ANSI_GREEN+  clave +ANSI_RESET + " - " +ANSI_RED + hm.get(clave) +"\n" + ANSI_RESET);
+	        }        
+	}
+	public void imprimirProductos(HashMap<String,Double> hm) {
+		String clave;
+		 Iterator<String> productos = hm.keySet().iterator();
+		 while(productos.hasNext()){
+	            clave = productos.next();
+	            System.out.println(ANSI_GREEN + clave + ANSI_RESET);
+	        }        
+	}
+	public void guardarlista(HashMap<String,Double> hm) throws IOException {
+		BufferedWriter bw = new BufferedWriter(new FileWriter("ListaDeProductos.txt"));
+		String clave;
+		 Iterator<String> productos = hm.keySet().iterator();
+		 while(productos.hasNext()){
+	            clave = productos.next();
+	           bw.write(clave + " - " + hm.get(clave) +"\n");
+	        }   
+		 bw.close();
+		 System.out.println(ANSI_PURPLE+"Ha sido guardada" + ANSI_RESET);
+	}
+}

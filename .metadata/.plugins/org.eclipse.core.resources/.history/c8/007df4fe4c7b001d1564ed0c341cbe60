@@ -1,0 +1,22 @@
+package diccionarioSinonimos;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class clasePrincipal {
+	static Scanner sc = new Scanner(System.in);
+	static HashMap <String,String>lista = new HashMap<String, String>();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	public static void menu() {
+		System.out.println("Pon una palabra");
+		String palabra = sc.next();
+		if(lista.containsKey(palabra)) {
+			System.out.println(lista.get(palabra));
+		}
+	}
+}

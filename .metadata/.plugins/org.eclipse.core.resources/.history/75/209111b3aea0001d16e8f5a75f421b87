@@ -1,0 +1,23 @@
+<%-- resultEj5.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<%
+String valE = request.getParameter("España");
+String valI = request.getParameter("Italia");
+String valF = request.getParameter("Francia");
+String valR = request.getParameter("Rusia");
+String valC = request.getParameter("Cuba");
+int acertada = 0;
+int falladas = 0;
+if(valE.equals("Madrid")== true){
+	acertada = acertada+1;
+}
+if(valI.equals("Italia")== true)
+%>
+</body>
+</html>

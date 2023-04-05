@@ -1,0 +1,20 @@
+<%-- resultEj5.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<%
+int altura = Integer.parseInt(request.getParameter("altura"));
+String simbolo = request.getParameter("simbolo");
+String blanco = " ";
+String base[] = new String[altura];
+for(int i = altura; i <= base.length; i++){
+	
+}
+
+%>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<%-- resultEj5.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<%
+int altura = Integer.parseInt(request.getParameter("altura"));
+String simbolo = request.getParameter("simbolo");
+String blanco = ("<br>");
+int mitad = 
+for (int i = 1; i < altura; i++) {
+	if(i < mitadlineas) {
+		for (int j = 0; j < lineas; j++) {
+			if (j < mitadlineas + i && j > mitadlineas -i) {
+				System.out.print(simbolo );
+			}else { 
+				System.out.print(" ");
+			}
+		}
+	}
+}	
+%>
+</body>
+</html>

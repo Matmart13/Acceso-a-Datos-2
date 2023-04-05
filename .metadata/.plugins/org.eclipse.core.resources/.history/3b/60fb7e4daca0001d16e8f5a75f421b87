@@ -1,0 +1,15 @@
+<%-- Ejercicio 5.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<form method="get" action="resultadoEj1.jsp">
+Introduzca hasta que numero quiere hacer la serie de fibonacci
+<input type="text" name="numero1">
+<input type="submit" value="OK">
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<%-- resultEj2.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<%
+int[] matriz = {10,3,10,6,1,4,5,7,8,2};
+int mayor = 0;
+for(int i = 0; i< matriz.length; i++){
+	for(int j = 10; j ==1;j--){
+		if(matriz[i]> matriz[j] ){
+			mayor = matriz[i];
+		}else{
+			i++;
+		}
+	}
+}
+out.print("El mayor es " + mayor);
+%>
+</body>
+</html>

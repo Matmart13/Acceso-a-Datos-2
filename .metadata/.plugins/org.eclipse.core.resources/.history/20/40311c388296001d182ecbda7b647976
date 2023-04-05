@@ -1,0 +1,16 @@
+<%-- resultcua.jsp (proyecto Incrementa5) --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+El area del triangulo es 
+<%
+double resultado;
+resultado = (Double.parseDouble(request.getParameter("numerobase")* Double.parseDouble(request.getParameter("numeroalt"))))/ 2) ;
+out.print(resultado);
+%>
+</body>
+</html>

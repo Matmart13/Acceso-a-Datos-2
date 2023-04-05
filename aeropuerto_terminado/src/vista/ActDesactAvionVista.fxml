@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="232.0" prefWidth="362.0" stylesheets="@../css/estilos.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ActDesactAvionController">
+   <children>
+      <ComboBox fx:id="cmbAeropuertos" layoutX="108.0" layoutY="36.0" onAction="#cargarAviones" prefHeight="25.0" prefWidth="182.0" styleClass="combo" />
+      <ComboBox fx:id="cmbAviones" layoutX="108.0" layoutY="84.0" onAction="#seleccionarActivado" prefHeight="25.0" prefWidth="182.0" styleClass="combo" />
+      <Label layoutX="27.0" layoutY="40.0" text="Aeropuertos" />
+      <Label layoutX="49.0" layoutY="88.0" text="Aviones" />
+      <Button fx:id="btnActualizar" layoutX="108.0" layoutY="170.0" mnemonicParsing="false" onAction="#actualizarAvion" prefHeight="25.0" prefWidth="77.0" text="Actualizar">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="guardar" />
+         </styleClass></Button>
+      <Button fx:id="btnCancelar" layoutX="204.0" layoutY="170.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="86.0" text="Cancelar">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="cancelar" />
+         </styleClass></Button>
+      <RadioButton fx:id="rdbActivado" layoutX="108.0" layoutY="133.0" mnemonicParsing="false" text="Activado" />
+      <RadioButton fx:id="rdbDesactivado" layoutX="204.0" layoutY="133.0" mnemonicParsing="false" text="Desactivado" />
+   </children>
+</AnchorPane>

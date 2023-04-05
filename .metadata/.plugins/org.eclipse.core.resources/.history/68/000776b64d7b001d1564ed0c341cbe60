@@ -1,0 +1,47 @@
+package diccionarioSinonimos;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class clasePrincipal {
+	static Scanner sc = new Scanner(System.in);
+	static HashMap <String,String>lista = new HashMap<String, String>();
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	public static void menu() {
+		
+		int opcion = 0;
+		do {
+			System.out.println("Pon una palabra");
+			String palabra = sc.next();
+		if(lista.containsKey(palabra)) {
+			System.out.println(lista.get(palabra));
+		}else {
+			System.out.println("Cual era la palabra");
+		    palabra = sc.next();
+		    System.out.println("Pon 3 sinonimos");
+		    System.out.println("El primero");
+		    String sinonimo = sc.next();
+		    lista.put(palabra, sinonimo);
+		    System.out.println("El segundo");
+		    lista.put(palabra, sinonimo);
+		    System.out.println("El tercero");
+		    lista.put(palabra, sinonimo);
+		    System.out.println("Gracias por su aportación");
+		}
+		System.out.println("Quiere buscar otra palabra");
+		System.out.println(" 1 si ");
+		System.out.println(" 2 no");
+		opcion = sc.nextInt();
+	}while(opcion != 2);
+		System.out.println("Gracias por usar el diccionario de sinonimos");
+	}
+	public static void lista() {
+		 lista.put("problema", "enigma");
+	}
+}

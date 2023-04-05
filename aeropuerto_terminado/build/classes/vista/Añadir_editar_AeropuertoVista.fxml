@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="308.0" stylesheets="@../css/estilos.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Añadir_editar_AeropuertoController">
+   <children>
+      <Label layoutX="66.0" layoutY="42.0" text="Nombre" />
+      <TextField fx:id="txtNombre" layoutX="125.0" layoutY="40.0" styleClass="textfield" />
+      <RadioButton fx:id="rdbPublico" layoutX="126.0" layoutY="270.0" mnemonicParsing="false" onAction="#cambiarCamposPublicos" selected="true" text="Público" />
+      <RadioButton fx:id="rdbPrivado" layoutX="126.0" layoutY="377.0" mnemonicParsing="false" onAction="#cambiarCamposPrivados" text="Privado" />
+      <Button fx:id="btnCancelar" layoutX="212.0" layoutY="447.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="73.0" text="Cancelar">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="cancelar" />
+         </styleClass></Button>
+      <Button fx:id="btnGuardar" layoutX="124.0" layoutY="447.0" mnemonicParsing="false" onAction="#guardar" prefHeight="25.0" prefWidth="85.0" text="Guardar">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="guardar" />
+         </styleClass></Button>
+      <TextField fx:id="txtPais" layoutX="125.0" layoutY="76.0" styleClass="textfield" />
+      <Label layoutX="88.0" layoutY="78.0" text="País" />
+      <TextField fx:id="txtCiudad" layoutX="125.0" layoutY="108.0" styleClass="textfield" />
+      <Label layoutX="69.0" layoutY="112.0" text="Ciudad" />
+      <TextField fx:id="txtCalle" layoutX="125.0" layoutY="140.0" styleClass="textfield" />
+      <Label layoutX="79.0" layoutY="144.0" text="Calle" />
+      <TextField fx:id="txtNumero" layoutX="125.0" layoutY="171.0" styleClass="textfield" />
+      <Label layoutX="70.0" layoutY="175.0" text="Número" />
+      <TextField fx:id="txtAnio" layoutX="125.0" layoutY="204.0" styleClass="textfield" />
+      <Label layoutX="23.0" layoutY="208.0" text="Año inauguración" />
+      <Label layoutX="58.0" layoutY="242.0" text="Capacidad" />
+      <TextField fx:id="txtCapacidad" layoutX="125.0" layoutY="238.0" styleClass="textfield" />
+      <TextField fx:id="txtFinanciacion" layoutX="125.0" layoutY="300.0" styleClass="textfield" />
+      <Label layoutX="47.0" layoutY="304.0" text="Financiación" />
+      <TextField fx:id="txtDiscapacitados" layoutX="125.0" layoutY="338.0" styleClass="textfield" />
+      <Label layoutX="7.0" layoutY="342.0" text="Trab. discapacitados" />
+      <TextField fx:id="txtSocios" layoutX="125.0" layoutY="405.0" styleClass="textfield" />
+      <Label layoutX="61.0" layoutY="409.0" text="Nº Socios" />
+   </children>
+</AnchorPane>

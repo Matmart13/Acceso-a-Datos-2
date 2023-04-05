@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Personas> lista = new ArrayList<>();
+		
+		lista.add(new Personas("Poma", 1, "Paccha", 8, 2));
+		lista.add(new Personas("Pilar", 2, "Rodriguez",8, 2));
+		lista.add(new Personas("Martin", 3, "Mancini", 8, 2));
+		lista.add(new Personas("Pablo",4, "Tolosa", 8, 2));
+		lista.add(new Personas("Sergio", 5, "Rodriguez", 8, 2));
+		lista.add(new Personas("Waldemar", 6, "Stegierski", 8, 2));
+		lista.add(new Personas("Alberto ", 7, "Gutierrez", 8, 2));
+		lista.add(new Personas("Hector", 8, "Angeles", 8, 2));
+		lista.add(new Personas("Jonathan", 9, "Torres", 8, 2));
+		
+		for (int i = 0; i < lista.size(); i++) {
+			System.out.print(lista.get(i).Dni + "\t");
+			System.out.print(lista.get(i).nombre + "\t");
+			System.out.print(lista.get(i).apellidos + "\t");
+			System.out.print(lista.get(i).curso + "\t");
+			System.out.print(lista.get(i).nota + "\t");
+		}
+	}
+
+}

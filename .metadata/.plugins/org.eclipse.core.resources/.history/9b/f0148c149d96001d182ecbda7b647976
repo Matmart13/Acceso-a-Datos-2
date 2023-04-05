@@ -1,0 +1,27 @@
+<%-- menu.jsp --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+
+Pon los valores
+<input type="text" name="numeroIntro">
+
+<form method="get" action="resultcir.jsp">
+Toca aqui para el area del circulo;
+<input type="submit" value="OK">
+</form>
+<form method="get" action="resulttri.jsp">
+Toca aqui para el area del triangulo;
+<input type="submit" value="OK">
+</form>
+<form method="get" action="resultcua.jsp">
+Toca aqui para el area del cuadrado;
+<input type="submit" value="OK">
+</form>
+</body>
+</html>

@@ -1,0 +1,3 @@
+	Cantidad  	|	  Nombre  	|	  Precio  	|	  Total  	|
+	5 	|	 Infamous	|	2,99 euros 	|	14,95 euros |
+Precio total de la compra 14,95 euros

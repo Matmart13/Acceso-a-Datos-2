@@ -1,0 +1,29 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Ejercicio2 {
+	public static ArrayList<String> lista = new ArrayList<>();
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		try {
+			BufferedReader br = new BufferedReader( new FileReader("B:\\DAM\\2ºAÑO\\Acceso a Datos 2ºTrimetre\\30-11-2022\\src\\letras.txt"));
+		
+			for (int i = 0; i < 10; i++) {
+				lista.add(br.readLine());
+			}
+			
+			for (int i = 0; i < lista.size(); i++) {
+				
+			}
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

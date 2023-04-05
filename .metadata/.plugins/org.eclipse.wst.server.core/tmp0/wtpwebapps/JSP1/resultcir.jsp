@@ -1,0 +1,18 @@
+<%-- resultcua.jsp (proyecto Incrementa5) --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+El area del circulo es 
+<%
+double resultado;
+double resultado1;
+resultado = (Double.parseDouble(request.getParameter("numeroIntro")) * Double.parseDouble(request.getParameter("numeroIntro")));
+resultado1 = resultado * Math.PI;
+out.print(resultado1);
+%>
+</body>
+</html>

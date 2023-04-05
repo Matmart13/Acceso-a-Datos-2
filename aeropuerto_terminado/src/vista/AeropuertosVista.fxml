@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../css/estilos.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AeropuertosController">
+   <children>
+      <TableView fx:id="tblAeropuertos" layoutX="29.0" layoutY="101.0" prefHeight="474.0" prefWidth="850.0" styleClass="table">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colNombre" prefWidth="120.79998779296875" text="Nombre" />
+            <TableColumn fx:id="colPais" prefWidth="64.79994201660156" text="País" />
+            <TableColumn fx:id="colCiudad" prefWidth="98.400146484375" text="Ciudad" />
+            <TableColumn fx:id="colCalle" prefWidth="224.800048828125" text="Calle" />
+            <TableColumn fx:id="colNumero" prefWidth="120.800048828125" text="Número" />
+            <TableColumn fx:id="colAnio" prefWidth="36.0" text="Año" />
+            <TableColumn fx:id="colCapacidad" prefWidth="128.0001220703125" text="Capacidad" />
+            <TableColumn fx:id="colSocios" prefWidth="111.2000732421875" text="Nº Socios" />
+            <TableColumn fx:id="colFinanciacion" prefWidth="104.79998779296875" text="Financiación" />
+            <TableColumn fx:id="colDiscapacitados" prefWidth="136.8000244140626" text="Nº Discapacitados" />
+        </columns>
+      </TableView>
+      <RadioButton fx:id="rdbPrivados" layoutX="29.0" layoutY="43.0" mnemonicParsing="false" onAction="#cambiarAeropuertosPrivados" selected="true" text="Privados" />
+      <RadioButton fx:id="rdbPublicos" layoutX="134.0" layoutY="43.0" mnemonicParsing="false" onAction="#cambiarAeropuertosPublicos" text="Públicos" />
+      <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="900.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Aeropuertos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#AniadirAeropuerto" text="Añadir..." />
+                  <MenuItem mnemonicParsing="false" onAction="#editarAeropuerto" text="Editar..." />
+                  <MenuItem mnemonicParsing="false" onAction="#borrarAeropuerto" text="Borrar..." />
+                  <MenuItem mnemonicParsing="false" onAction="#gananciasAeropuerto" text="Ganancias" />
+                  <MenuItem mnemonicParsing="false" onAction="#infoAeropuerto" text="Mostrar información completa" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Aviones">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aniadirAvion" text="Añadir..." />
+                  <MenuItem mnemonicParsing="false" onAction="#activarDesactivarAvion" text="Activar/desactivar..." />
+                  <MenuItem mnemonicParsing="false" onAction="#BorrarAvion" text="Borrar..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="txtFiltroNombre" layoutX="557.0" layoutY="45.0" onKeyReleased="#filtroPorNombre" prefHeight="26.0" prefWidth="259.0" styleClass="textfield" />
+      <Label layoutX="303.0" layoutY="52.0" prefHeight="18.0" prefWidth="226.0" text="Escribe el nombre de un aeropuerto:" />
+   </children>
+</AnchorPane>

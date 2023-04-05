@@ -1,0 +1,18 @@
+
+public class Ejercicio2 {
+	static int a ;
+	
+	public static int getA() {
+		return a;
+	}
+
+	public static void setA(int a) {
+		Ejercicio2.a = a;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

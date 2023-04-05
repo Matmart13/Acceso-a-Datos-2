@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\marti\OneDrive\DAM\2ºAÑO\Acceso a Datos 2ºTrimetre\.metadata\.plugins\org.eclipse.jdt.core
+910814228.index
+985413812.index
+1965568369.index
+1865797976.index
+556988503.index

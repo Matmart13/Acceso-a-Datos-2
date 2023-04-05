@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+C:\Users\marti\OneDrive\DAM\2ºAÑO\Acceso a Datos 2ºTrimetre\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3429450572.index
+109484081.index
+3007476596.index
+1257742345.index
+1301963792.index
+299243037.index
+399915219.index
+1357394232.index
+443178826.index
